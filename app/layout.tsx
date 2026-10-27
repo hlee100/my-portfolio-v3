@@ -3,6 +3,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; // Prevent FontAwesome from dynamically adding CSS
 
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en" className="dark h-full antialiased selection:bg-sky-500/30 selection:text-sky-200">
       <body className="min-h-full flex flex-col font-sans bg-[#131210] text-[#f5f3ef]">
         {children}
+        <Analytics />
       </body>
     </html>
   );
