@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Henry Lee — IT, Networking & Cybersecurity Specialist",
+  title: "Henry Lee",
   description:
     "Portfolio of Henry Lee: Computer Science & Cybersecurity student at CCSU, IT Logistics Technician, and Systems Specialist experienced in Active Directory, Network Infrastructure, Hardware Troubleshooting, and Python Automation.",
 };
@@ -18,7 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark h-full antialiased selection:bg-sky-500/30 selection:text-sky-200">
+    <html
+      lang="en"
+      className="dark h-full antialiased selection:bg-sky-500/30 selection:text-sky-200"
+    >
       <body className="min-h-full flex flex-col font-sans bg-[#131210] text-[#f5f3ef]">
         {children}
         <Analytics />

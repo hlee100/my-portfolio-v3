@@ -50,7 +50,13 @@ const EXPERIENCES = [
       "Diagnosed, repaired, and custom-built computer systems directly on the warehouse floor, ensuring all deployed hardware met strict performance standards.",
       "Utilized PSA (Professional Services Automation) software (Rev.io) to streamline inventory and ticketing requests to create an on-demand structural system that fulfills client needs.",
     ],
-    tags: ["Hardware Troubleshooting", "Custom PC Assembly", "Rev.io PSA", "Advanced Excel", "Inventory Logistics"],
+    tags: [
+      "Hardware Troubleshooting",
+      "Custom PC Assembly",
+      "Rev.io PSA",
+      "Advanced Excel",
+      "Inventory Logistics",
+    ],
   },
   {
     role: "PLM Data Analyst Intern",
@@ -64,7 +70,13 @@ const EXPERIENCES = [
       "Managed and audited large-scale enterprise datasets within Microsoft Excel to ensure accuracy.",
       "Programmed and automated repetitive data and Excel tasks in Python utilizing analytical libraries like pandas.",
     ],
-    tags: ["Windchill PLM", "Styleline", "Python Automation", "pandas", "Enterprise Data Auditing"],
+    tags: [
+      "Windchill PLM",
+      "Styleline",
+      "Python Automation",
+      "pandas",
+      "Enterprise Data Auditing",
+    ],
   },
 ];
 
@@ -74,7 +86,8 @@ const CERTIFICATIONS = [
     title: "Google IT Automation with Python",
     issuer: "Google",
     date: "March 2025",
-    description: "Automating system administration, configuration management, and scripting with Python.",
+    description:
+      "Automating system administration, configuration management, and scripting with Python.",
     badgeColor: "text-sky-400 bg-sky-400/10 border-sky-400/20",
     icon: faGoogle,
   },
@@ -82,7 +95,8 @@ const CERTIFICATIONS = [
     title: "Google Project Management",
     issuer: "Google",
     date: "February 2025",
-    description: "Agile methodologies, sprint planning, risk mitigation, and team leadership.",
+    description:
+      "Agile methodologies, sprint planning, risk mitigation, and team leadership.",
     badgeColor: "text-blue-400 bg-blue-400/10 border-blue-400/20",
     icon: faGoogle,
   },
@@ -90,7 +104,8 @@ const CERTIFICATIONS = [
     title: "TestOut PC Pro Certification",
     issuer: "TestOut Corporation",
     date: "March 2023",
-    description: "Comprehensive hardware installation, OS configuration, peripherals, and system troubleshooting.",
+    description:
+      "Comprehensive hardware installation, OS configuration, peripherals, and system troubleshooting.",
     badgeColor: "text-emerald-400 bg-emerald-400/10 border-emerald-400/20",
     icon: faDesktop,
   },
@@ -98,7 +113,8 @@ const CERTIFICATIONS = [
     title: "TestOut IT Fundamentals Pro",
     issuer: "TestOut Corporation",
     date: "April 2022",
-    description: "Network protocols, security essentials, database basics, and hardware components.",
+    description:
+      "Network protocols, security essentials, database basics, and hardware components.",
     badgeColor: "text-cyan-400 bg-cyan-400/10 border-cyan-400/20",
     icon: faMicrochip,
   },
@@ -106,7 +122,8 @@ const CERTIFICATIONS = [
     title: "Information Technology, Introduction",
     issuer: "YouScience",
     date: "May 2025",
-    description: "Foundational technical aptitude across IT support, networking, and digital systems.",
+    description:
+      "Foundational technical aptitude across IT support, networking, and digital systems.",
     badgeColor: "text-sky-400 bg-sky-400/10 border-sky-400/20",
     icon: faCertificate,
   },
@@ -145,19 +162,38 @@ const SKILL_CATEGORIES = [
   },
   {
     category: "Networking & Protocols",
-    skills: ["Active Directory", "DHCP & DNS", "LAN / WAN", "TCP/IP & Subnetting", "Network Diagnostics"],
+    skills: [
+      "Active Directory",
+      "DHCP & DNS",
+      "LAN / WAN",
+      "TCP/IP & Subnetting",
+      "Network Diagnostics",
+    ],
     icon: faNetworkWired,
     color: "text-emerald-400",
   },
   {
     category: "Systems & Support",
-    skills: ["Hardware Troubleshooting", "Custom PC Building", "PSA (Rev.io)", "PLM (Windchill / Styleline)", "Ticketing Workflows"],
+    skills: [
+      "Hardware Troubleshooting",
+      "Custom PC Building",
+      "PSA (Rev.io)",
+      "PLM (Windchill / Styleline)",
+      "Ticketing Workflows",
+    ],
     icon: faWrench,
     color: "text-sky-400",
   },
   {
     category: "Languages & Tools",
-    skills: ["Python (Automation & pandas)", "C / C++", "Java", "Docker", "Git / GitHub", "HTML / CSS / JavaScript"],
+    skills: [
+      "Python (Automation & pandas)",
+      "C / C++",
+      "Java",
+      "Docker",
+      "Git / GitHub",
+      "HTML / CSS / JavaScript",
+    ],
     icon: faPython,
     color: "text-cyan-400",
   },
@@ -166,7 +202,9 @@ const SKILL_CATEGORIES = [
 export default function PortfolioPage() {
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [copiedPhone, setCopiedPhone] = useState(false);
-  const [activeTab, setActiveTab] = useState<"all" | "experience" | "skills" | "certifications" | "education">("all");
+  const [activeTab, setActiveTab] = useState<
+    "all" | "experience" | "skills" | "certifications" | "education"
+  >("all");
 
   const emailAddress = "henrylee1606@gmail.com";
   const phoneNumber = "860-248-0801";
@@ -248,7 +286,10 @@ export default function PortfolioPage() {
             {/* Bio & Information */}
             <div className="my-4 text-center">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/25 text-sky-400 text-xs font-bold tracking-wide uppercase mb-2 backdrop-blur-sm">
-                <FontAwesomeIcon icon={faShieldHalved} className="text-sky-400 text-xs" />
+                <FontAwesomeIcon
+                  icon={faShieldHalved}
+                  className="text-sky-400 text-xs"
+                />
                 <span>IT • Networking • Cybersecurity</span>
               </div>
 
@@ -257,17 +298,25 @@ export default function PortfolioPage() {
               </h1>
 
               <p className="mt-2 text-xs leading-relaxed text-zinc-400">
-                Computer Science &amp; Cybersecurity scholar at CCSU. Experienced in enterprise IT logistics, Active Directory, hardware repair, and Python automation.
+                Computer Science &amp; Cybersecurity scholar at CCSU.
+                Experienced in enterprise IT logistics, Active Directory,
+                hardware repair, and Python automation.
               </p>
 
               {/* Quick Meta Badges */}
               <div className="mt-3.5 flex flex-wrap items-center justify-center gap-2 text-xs">
                 <span className="inline-flex items-center gap-1 rounded-lg bg-white/[0.04] border border-white/[0.08] px-2.5 py-1 font-medium text-zinc-300">
-                  <FontAwesomeIcon icon={faLocationDot} className="text-zinc-400 text-[11px]" />
+                  <FontAwesomeIcon
+                    icon={faLocationDot}
+                    className="text-zinc-400 text-[11px]"
+                  />
                   Berlin, CT
                 </span>
                 <span className="inline-flex items-center gap-1 rounded-lg bg-white/[0.04] border border-white/[0.08] px-2.5 py-1 font-medium text-zinc-300">
-                  <FontAwesomeIcon icon={faGraduationCap} className="text-sky-400 text-[11px]" />
+                  <FontAwesomeIcon
+                    icon={faGraduationCap}
+                    className="text-sky-400 text-[11px]"
+                  />
                   CCSU CS &amp; Cyber &apos;29
                 </span>
               </div>
@@ -284,7 +333,11 @@ export default function PortfolioPage() {
                   icon={copiedEmail ? faCheck : faCopy}
                   className={copiedEmail ? "text-emerald-300" : "text-sky-200"}
                 />
-                <span>{copiedEmail ? "Email Copied!" : "Copy henrylee1606@gmail.com"}</span>
+                <span>
+                  {copiedEmail
+                    ? "Email Copied!"
+                    : "Copy henrylee1606@gmail.com"}
+                </span>
               </button>
 
               <div className="grid grid-cols-2 gap-2">
@@ -292,7 +345,10 @@ export default function PortfolioPage() {
                   href={`mailto:${emailAddress}?subject=Inquiry%20from%20Portfolio%20-%20Henry%20Lee`}
                   className="flex items-center justify-center gap-1.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] hover:text-white hover:border-sky-500/30 border border-white/[0.08] px-3 py-2 text-xs font-semibold text-zinc-300 transition-colors"
                 >
-                  <FontAwesomeIcon icon={faEnvelope} className="text-xs text-sky-400" />
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="text-xs text-sky-400"
+                  />
                   <span>Email Me</span>
                 </a>
 
@@ -301,7 +357,10 @@ export default function PortfolioPage() {
                   type="button"
                   className="flex items-center justify-center gap-1.5 rounded-xl bg-white/[0.04] hover:bg-emerald-500/10 hover:text-emerald-400 hover:border-emerald-500/30 border border-white/[0.08] px-3 py-2 text-xs font-semibold text-zinc-300 transition-colors cursor-pointer"
                 >
-                  <FontAwesomeIcon icon={copiedPhone ? faCheck : faPhone} className="text-xs text-emerald-400" />
+                  <FontAwesomeIcon
+                    icon={copiedPhone ? faCheck : faPhone}
+                    className="text-xs text-emerald-400"
+                  />
                   <span>{copiedPhone ? "Phone Copied" : "860-248-0801"}</span>
                 </button>
               </div>
@@ -341,12 +400,23 @@ export default function PortfolioPage() {
         </aside>
 
         {/* ================= RIGHT MAIN (SCROLLABLE CONTENT FEED) ================= */}
-        <main ref={mainRef} className="flex-1 w-full lg:h-full lg:overflow-y-auto custom-scrollbar py-6 lg:py-8 lg:px-4">
+        <main
+          ref={mainRef}
+          className="flex-1 w-full lg:h-full lg:overflow-y-auto custom-scrollbar py-6 lg:py-8 lg:px-4"
+        >
           <div className="space-y-16 max-w-4xl">
             {/* Quick Navigation Filter Pills */}
             <div className="sticky top-0 z-30 flex justify-center w-full py-2">
               <nav className="inline-flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 rounded-full bg-[#181715]/90 backdrop-blur-md px-3 py-1.5 border border-white/10 shadow-2xl shadow-black/50">
-                {(["all", "experience", "skills", "certifications", "education"] as const).map((tab) => (
+                {(
+                  [
+                    "all",
+                    "experience",
+                    "skills",
+                    "certifications",
+                    "education",
+                  ] as const
+                ).map((tab) => (
                   <button
                     key={tab}
                     onClick={() => {
@@ -369,7 +439,10 @@ export default function PortfolioPage() {
             <section id="overview" className="space-y-6 pt-2 scroll-mt-24">
               <div className="inline-flex items-center gap-2 rounded-full border border-sky-500/20 bg-sky-500/10 px-3.5 py-1 text-xs font-semibold text-sky-400">
                 <span className="h-1.5 w-1.5 rounded-full bg-sky-400 animate-pulse" />
-                <span>Enterprise Systems Support • Network Diagnostics • Cyber Defense</span>
+                <span>
+                  Enterprise Systems Support • Network Diagnostics • Cyber
+                  Defense
+                </span>
               </div>
 
               <div className="space-y-1">
@@ -382,7 +455,10 @@ export default function PortfolioPage() {
               </div>
 
               <p className="max-w-2xl text-base leading-relaxed text-zinc-300 sm:text-lg">
-                Bridging technical hardware diagnostics, network administration (Active Directory, DHCP/DNS, LAN/WAN), and cybersecurity defense. Skilled at modernizing enterprise IT operations and writing Python scripts to automate complex workflows.
+                Bridging technical hardware diagnostics, network administration
+                (Active Directory, DHCP/DNS, LAN/WAN), and cybersecurity
+                defense. Skilled at modernizing enterprise IT operations and
+                writing Python scripts to automate complex workflows.
               </p>
 
               {/* CTA Action Row */}
@@ -402,7 +478,10 @@ export default function PortfolioPage() {
                   onClick={() => scrollToSection("certifications")}
                   className="flex items-center gap-2 rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 text-sm font-semibold text-zinc-200 backdrop-blur-sm transition-all hover:bg-white/[0.08] hover:border-white/30 cursor-pointer"
                 >
-                  <FontAwesomeIcon icon={faCertificate} className="text-sky-400" />
+                  <FontAwesomeIcon
+                    icon={faCertificate}
+                    className="text-sky-400"
+                  />
                   <span>5 Industry Certifications</span>
                 </button>
               </div>
@@ -422,7 +501,9 @@ export default function PortfolioPage() {
                 <p className="mt-2 text-xs font-bold uppercase tracking-wider text-zinc-400">
                   Hardware Quality &amp; Staging
                 </p>
-                <p className="mt-0.5 text-xs text-zinc-400">Diagnosed, repaired &amp; built custom PC systems</p>
+                <p className="mt-0.5 text-xs text-zinc-400">
+                  Diagnosed, repaired &amp; built custom PC systems
+                </p>
               </div>
 
               <div className="rounded-2xl bg-white/[0.02] border border-white/[0.04] p-5 transition-all hover:bg-white/[0.05]">
@@ -437,7 +518,9 @@ export default function PortfolioPage() {
                 <p className="mt-2 text-xs font-bold uppercase tracking-wider text-zinc-400">
                   Verified Certifications
                 </p>
-                <p className="mt-0.5 text-xs text-zinc-400">Google IT Automation, TestOut PC Pro &amp; IT Fundamentals</p>
+                <p className="mt-0.5 text-xs text-zinc-400">
+                  Google IT Automation, TestOut PC Pro &amp; IT Fundamentals
+                </p>
               </div>
 
               <div className="rounded-2xl bg-white/[0.02] border border-white/[0.04] p-5 transition-all hover:bg-white/[0.05]">
@@ -452,7 +535,9 @@ export default function PortfolioPage() {
                 <p className="mt-2 text-xs font-bold uppercase tracking-wider text-zinc-400">
                   CCSU CS &amp; Cyber Minor
                 </p>
-                <p className="mt-0.5 text-xs text-zinc-400">Computer Science Club Officer &amp; AAPI Member</p>
+                <p className="mt-0.5 text-xs text-zinc-400">
+                  Computer Science Club Officer &amp; AAPI Member
+                </p>
               </div>
             </section>
 
@@ -464,7 +549,7 @@ export default function PortfolioPage() {
                     Core Technical Pillars
                   </span>
                   <h3 className="text-2xl font-black tracking-tight text-white sm:text-3xl">
-                    IT &amp; Cybersecurity Bento
+                    IT &amp; Cybersecurity
                   </h3>
                 </div>
                 <span className="text-xs text-zinc-400 hidden sm:block">
@@ -493,7 +578,10 @@ export default function PortfolioPage() {
                     </h4>
 
                     <p className="mt-3 text-sm text-sky-100/90 leading-relaxed">
-                      Diagnosing, repairing, and custom-building enterprise computers directly on the warehouse floor at Compu-Tech. Utilizing Rev.io PSA to streamline client ticketing workflows.
+                      Diagnosing, repairing, and custom-building enterprise
+                      computers directly on the warehouse floor at Compu-Tech.
+                      Utilizing Rev.io PSA to streamline client ticketing
+                      workflows.
                     </p>
                   </div>
 
@@ -509,7 +597,12 @@ export default function PortfolioPage() {
                   </div>
 
                   <div className="mt-6 flex flex-wrap gap-2">
-                    {["Custom PC Assembly", "Hardware Diagnostics", "Rev.io PSA", "Advanced Excel"].map((tag) => (
+                    {[
+                      "Custom PC Assembly",
+                      "Hardware Diagnostics",
+                      "Rev.io PSA",
+                      "Advanced Excel",
+                    ].map((tag) => (
                       <span
                         key={tag}
                         className="rounded-lg bg-black/25 px-2.5 py-1 text-xs font-semibold text-white/95"
@@ -538,7 +631,9 @@ export default function PortfolioPage() {
                     </h4>
 
                     <p className="mt-3 text-sm text-zinc-800 leading-relaxed font-medium">
-                      Configuring Windows Server domain environments, organizing organizational units, assigning group policies, managing DHCP scopes, and analyzing traffic with Kali Linux.
+                      Configuring Windows Server domain environments, organizing
+                      organizational units, assigning group policies, managing
+                      DHCP scopes, and analyzing traffic with Kali Linux.
                     </p>
                   </div>
 
@@ -546,7 +641,9 @@ export default function PortfolioPage() {
                   <div className="mt-8 rounded-2xl bg-zinc-950 p-4 text-white shadow-inner font-mono text-xs">
                     <div className="flex items-center justify-between text-zinc-400">
                       <span>Domain: Corp.Local</span>
-                      <span className="text-lime-400 font-bold">AD / DNS Active</span>
+                      <span className="text-lime-400 font-bold">
+                        AD / DNS Active
+                      </span>
                     </div>
                     <div className="mt-2 text-zinc-300">
                       Subnet: 192.168.10.0/24 • DHCP Lease: 0 Packet Loss
@@ -554,7 +651,13 @@ export default function PortfolioPage() {
                   </div>
 
                   <div className="mt-6 flex flex-wrap gap-2">
-                    {["Active Directory", "Windows Server", "DHCP/DNS", "Kali Linux", "LAN/WAN"].map((tag) => (
+                    {[
+                      "Active Directory",
+                      "Windows Server",
+                      "DHCP/DNS",
+                      "Kali Linux",
+                      "LAN/WAN",
+                    ].map((tag) => (
                       <span
                         key={tag}
                         className="rounded-lg bg-black/15 px-2.5 py-1 text-xs font-bold text-zinc-900"
@@ -583,7 +686,9 @@ export default function PortfolioPage() {
                     </h4>
 
                     <p className="mt-3 text-sm text-zinc-400 leading-relaxed">
-                      Maintaining product lifecycle data structures in Windchill and Styleline at Jarvis Products. Scripting automated data audits in Python using pandas.
+                      Maintaining product lifecycle data structures in Windchill
+                      and Styleline at Jarvis Products. Scripting automated data
+                      audits in Python using pandas.
                     </p>
                   </div>
 
@@ -602,7 +707,13 @@ export default function PortfolioPage() {
                   </div>
 
                   <div className="mt-6 flex flex-wrap gap-2">
-                    {["Windchill PLM", "Python", "pandas", "Styleline", "Data Auditing"].map((tag) => (
+                    {[
+                      "Windchill PLM",
+                      "Python",
+                      "pandas",
+                      "Styleline",
+                      "Data Auditing",
+                    ].map((tag) => (
                       <span
                         key={tag}
                         className="rounded-lg bg-white/[0.06] border border-white/5 px-2.5 py-1 text-xs font-semibold text-zinc-300"
@@ -631,7 +742,9 @@ export default function PortfolioPage() {
                     </h4>
 
                     <p className="mt-3 text-sm text-zinc-400 leading-relaxed">
-                      Trained computer vision models to identify and track objects from live video and webcams using YOLO, Roboflow dataset pipelines, and Python.
+                      Trained computer vision models to identify and track
+                      objects from live video and webcams using YOLO, Roboflow
+                      dataset pipelines, and Python.
                     </p>
                   </div>
 
@@ -639,7 +752,10 @@ export default function PortfolioPage() {
                   <div className="mt-8 rounded-2xl bg-black/50 p-4 border border-white/5 font-mono text-xs">
                     <div className="flex items-center justify-between text-zinc-400">
                       <span className="text-cyan-400 flex items-center gap-1.5">
-                        <FontAwesomeIcon icon={faCircleCheck} className="text-emerald-400" />
+                        <FontAwesomeIcon
+                          icon={faCircleCheck}
+                          className="text-emerald-400"
+                        />
                         Model: YOLOv8 + Roboflow
                       </span>
                       <span className="text-zinc-400">Confidence: 98.4%</span>
@@ -651,7 +767,13 @@ export default function PortfolioPage() {
                   </div>
 
                   <div className="mt-6 flex flex-wrap gap-2">
-                    {["Python", "Machine Learning", "YOLO", "Roboflow", "Computer Vision"].map((tag) => (
+                    {[
+                      "Python",
+                      "Machine Learning",
+                      "YOLO",
+                      "Roboflow",
+                      "Computer Vision",
+                    ].map((tag) => (
                       <span
                         key={tag}
                         className="rounded-lg bg-white/[0.06] border border-white/5 px-2.5 py-1 text-xs font-semibold text-zinc-300"
@@ -675,7 +797,6 @@ export default function PortfolioPage() {
                     Professional Experience
                   </h3>
                 </div>
-                <span className="text-xs text-zinc-400">As featured on resume</span>
               </div>
 
               <div className="space-y-6">
@@ -687,12 +808,20 @@ export default function PortfolioPage() {
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
                       <div>
                         <div className="inline-flex items-center gap-2 rounded-md bg-sky-500/10 px-2.5 py-1 text-xs font-bold text-sky-400 mb-2">
-                          <FontAwesomeIcon icon={faBriefcase} className="text-[10px]" />
+                          <FontAwesomeIcon
+                            icon={faBriefcase}
+                            className="text-[10px]"
+                          />
                           <span>{exp.company}</span>
                         </div>
-                        <h4 className="text-xl font-extrabold text-white">{exp.role}</h4>
+                        <h4 className="text-xl font-extrabold text-white">
+                          {exp.role}
+                        </h4>
                         <p className="text-xs font-medium text-zinc-400 flex items-center gap-1.5 mt-1">
-                          <FontAwesomeIcon icon={faLocationDot} className="text-zinc-400 text-[11px]" />
+                          <FontAwesomeIcon
+                            icon={faLocationDot}
+                            className="text-zinc-400 text-[11px]"
+                          />
                           {exp.location}
                         </p>
                       </div>
@@ -703,9 +832,15 @@ export default function PortfolioPage() {
 
                     <ul className="space-y-2.5 pt-2">
                       {exp.bullets.map((bullet, bIdx) => (
-                        <li key={bIdx} className="flex items-start gap-3 text-xs leading-relaxed text-zinc-300 sm:text-sm">
+                        <li
+                          key={bIdx}
+                          className="flex items-start gap-3 text-xs leading-relaxed text-zinc-300 sm:text-sm"
+                        >
                           <span className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-sky-500/20 text-sky-400">
-                            <FontAwesomeIcon icon={faCheck} className="text-[9px]" />
+                            <FontAwesomeIcon
+                              icon={faCheck}
+                              className="text-[9px]"
+                            />
                           </span>
                           <span>{bullet}</span>
                         </li>
@@ -738,7 +873,9 @@ export default function PortfolioPage() {
                     Industry Certifications
                   </h3>
                 </div>
-                <span className="text-xs text-zinc-400">5 Validated Credentials</span>
+                <span className="text-xs text-zinc-400">
+                  5 Validated Credentials
+                </span>
               </div>
 
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -749,11 +886,15 @@ export default function PortfolioPage() {
                   >
                     <div>
                       <div className="flex items-center justify-between gap-2">
-                        <span className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[11px] font-bold border ${cert.badgeColor}`}>
+                        <span
+                          className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[11px] font-bold border ${cert.badgeColor}`}
+                        >
                           <FontAwesomeIcon icon={cert.icon} />
                           <span>{cert.issuer}</span>
                         </span>
-                        <span className="text-xs font-mono text-zinc-400">{cert.date}</span>
+                        <span className="text-xs font-mono text-zinc-400">
+                          {cert.date}
+                        </span>
                       </div>
 
                       <h4 className="mt-3.5 text-base font-bold text-white group-hover:text-sky-300 transition-colors">
@@ -766,7 +907,10 @@ export default function PortfolioPage() {
                     </div>
 
                     <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center gap-1 text-[11px] font-medium text-emerald-400">
-                      <FontAwesomeIcon icon={faCircleCheck} className="text-xs" />
+                      <FontAwesomeIcon
+                        icon={faCircleCheck}
+                        className="text-xs"
+                      />
                       <span>Certified &amp; Verified</span>
                     </div>
                   </div>
@@ -792,7 +936,11 @@ export default function PortfolioPage() {
                     className="rounded-2xl bg-white/[0.02] border border-white/[0.07] p-5 space-y-3"
                   >
                     <div className="flex items-center gap-2.5 border-b border-white/[0.06] pb-3">
-                      <FontAwesomeIcon icon={cat.icon} size="lg" className={cat.color} />
+                      <FontAwesomeIcon
+                        icon={cat.icon}
+                        size="lg"
+                        className={cat.color}
+                      />
                       <h4 className="text-sm font-bold text-white uppercase tracking-wider">
                         {cat.category}
                       </h4>
@@ -814,7 +962,9 @@ export default function PortfolioPage() {
 
               {/* Developer & Tools Bar */}
               <div className="rounded-2xl bg-white/[0.02] border border-white/[0.06] p-4 flex flex-wrap items-center justify-between gap-4 text-xs">
-                <span className="font-bold text-zinc-300 uppercase tracking-wider">Developer &amp; Support Tools:</span>
+                <span className="font-bold text-zinc-300 uppercase tracking-wider">
+                  Developer &amp; Support Tools:
+                </span>
                 <div className="flex flex-wrap gap-2">
                   {[
                     { label: "Git / GitHub", icon: faGithub },
@@ -828,7 +978,10 @@ export default function PortfolioPage() {
                       key={tool.label}
                       className="inline-flex items-center gap-1.5 rounded-md bg-white/[0.06] px-2.5 py-1 text-zinc-300 font-mono text-[11px]"
                     >
-                      <FontAwesomeIcon icon={tool.icon} className="text-sky-400 text-[10px]" />
+                      <FontAwesomeIcon
+                        icon={tool.icon}
+                        className="text-sky-400 text-[10px]"
+                      />
                       <span>{tool.label}</span>
                     </span>
                   ))}
@@ -857,9 +1010,15 @@ export default function PortfolioPage() {
                   >
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
                       <div>
-                        <h4 className="text-lg font-extrabold text-white">{edu.school}</h4>
-                        <p className="text-sm font-semibold text-sky-400 mt-0.5">{edu.degree}</p>
-                        <p className="text-xs text-zinc-400 mt-0.5">{edu.location}</p>
+                        <h4 className="text-lg font-extrabold text-white">
+                          {edu.school}
+                        </h4>
+                        <p className="text-sm font-semibold text-sky-400 mt-0.5">
+                          {edu.degree}
+                        </p>
+                        <p className="text-xs text-zinc-400 mt-0.5">
+                          {edu.location}
+                        </p>
                       </div>
                       <span className="text-xs font-mono text-zinc-400 sm:text-right mt-1 sm:mt-0">
                         {edu.period}
@@ -867,10 +1026,18 @@ export default function PortfolioPage() {
                     </div>
 
                     <div className="pt-2 border-t border-white/[0.06] space-y-1.5">
-                      <p className="text-xs font-bold uppercase tracking-wider text-zinc-400">Key Roles &amp; Focus:</p>
+                      <p className="text-xs font-bold uppercase tracking-wider text-zinc-400">
+                        Key Roles &amp; Focus:
+                      </p>
                       {edu.activities.map((act, aIdx) => (
-                        <p key={aIdx} className="text-xs text-zinc-300 flex items-center gap-2">
-                          <FontAwesomeIcon icon={faCheck} className="text-sky-400 text-[10px]" />
+                        <p
+                          key={aIdx}
+                          className="text-xs text-zinc-300 flex items-center gap-2"
+                        >
+                          <FontAwesomeIcon
+                            icon={faCheck}
+                            className="text-sky-400 text-[10px]"
+                          />
                           <span>{act}</span>
                         </p>
                       ))}
@@ -889,15 +1056,22 @@ export default function PortfolioPage() {
                 Ready to Discuss IT, Networking, or Cybersecurity Opportunities?
               </h3>
               <p className="max-w-lg mx-auto text-xs sm:text-sm text-zinc-400">
-                I&apos;m actively seeking IT Support, Network Technician, Systems Administration, and Cybersecurity internship and entry-level positions.
+                I&apos;m actively seeking IT Support, Network Technician,
+                Systems Administration, and Cybersecurity internship and
+                entry-level positions.
               </p>
               <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
                 <button
                   onClick={handleCopyEmail}
                   className="rounded-xl bg-sky-500 hover:bg-sky-600 px-5 py-2.5 text-xs font-bold text-white shadow-lg shadow-sky-500/30 transition-all cursor-pointer"
                 >
-                  <FontAwesomeIcon icon={copiedEmail ? faCheck : faCopy} className="mr-2" />
-                  {copiedEmail ? "Email Copied!" : "Copy henrylee1606@gmail.com"}
+                  <FontAwesomeIcon
+                    icon={copiedEmail ? faCheck : faCopy}
+                    className="mr-2"
+                  />
+                  {copiedEmail
+                    ? "Email Copied!"
+                    : "Copy henrylee1606@gmail.com"}
                 </button>
                 <a
                   href={`mailto:${emailAddress}?subject=Career%20Opportunity%20-%20Henry%20Lee`}
@@ -916,7 +1090,9 @@ export default function PortfolioPage() {
 
             {/* Minimal Clean Footer */}
             <footer className="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/10 pt-6 pb-12 text-xs text-zinc-400">
-              <p>© {new Date().getFullYear()} Henry Lee. All rights reserved.</p>
+              <p>
+                © {new Date().getFullYear()} Henry Lee. All rights reserved.
+              </p>
               <p className="flex items-center gap-1 text-zinc-400">
                 Berlin, CT • henrylee1606@gmail.com • (860) 248-0801
               </p>
